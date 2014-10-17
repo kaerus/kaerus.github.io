@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lib/api/query.js - arango</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="arango" src="http://kaerus.com/images/kaerus_logo.png" style="max-height: 65%;" title="arango">
+        
+            arango
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1.1.0</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/action", "classes/admin", "classes/aqlfunction", "classes/batch", "classes/collection", "classes/cursor", "classes/database", "classes/document", "classes/edge", "classes/endpoint", "classes/graph", "classes/import", "classes/index", "classes/jobs", "classes/query", "classes/simple", "classes/transaction", "classes/traversal", "classes/users", "modules/action", "modules/admin", "modules/aqlfunction", "modules/arango", "modules/batch", "modules/collection", "modules/cursor", "modules/database", "modules/document", "modules/edge", "modules/endpoint", "modules/graph", "modules/import", "modules/index", "modules/jobs", "modules/query", "modules/simple", "modules/transaction", "modules/traversal", "modules/users"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/action.html">action</a></li>
+                    
+                        <li><a href="../classes/admin.html">admin</a></li>
+                    
+                        <li><a href="../classes/aqlfunction.html">aqlfunction</a></li>
+                    
+                        <li><a href="../classes/batch.html">batch</a></li>
+                    
+                        <li><a href="../classes/collection.html">collection</a></li>
+                    
+                        <li><a href="../classes/cursor.html">cursor</a></li>
+                    
+                        <li><a href="../classes/database.html">database</a></li>
+                    
+                        <li><a href="../classes/document.html">document</a></li>
+                    
+                        <li><a href="../classes/edge.html">edge</a></li>
+                    
+                        <li><a href="../classes/endpoint.html">endpoint</a></li>
+                    
+                        <li><a href="../classes/graph.html">graph</a></li>
+                    
+                        <li><a href="../classes/import.html">import</a></li>
+                    
+                        <li><a href="../classes/index.html">index</a></li>
+                    
+                        <li><a href="../classes/jobs.html">jobs</a></li>
+                    
+                        <li><a href="../classes/query.html">query</a></li>
+                    
+                        <li><a href="../classes/simple.html">simple</a></li>
+                    
+                        <li><a href="../classes/transaction.html">transaction</a></li>
+                    
+                        <li><a href="../classes/traversal.html">traversal</a></li>
+                    
+                        <li><a href="../classes/users.html">users</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                        <li><a href="../modules/action.html">action</a></li>
+                    
+                        <li><a href="../modules/admin.html">admin</a></li>
+                    
+                        <li><a href="../modules/aqlfunction.html">aqlfunction</a></li>
+                    
+                        <li><a href="../modules/arango.html">arango</a></li>
+                    
+                        <li><a href="../modules/batch.html">batch</a></li>
+                    
+                        <li><a href="../modules/collection.html">collection</a></li>
+                    
+                        <li><a href="../modules/cursor.html">cursor</a></li>
+                    
+                        <li><a href="../modules/database.html">database</a></li>
+                    
+                        <li><a href="../modules/document.html">document</a></li>
+                    
+                        <li><a href="../modules/edge.html">edge</a></li>
+                    
+                        <li><a href="../modules/endpoint.html">endpoint</a></li>
+                    
+                        <li><a href="../modules/graph.html">graph</a></li>
+                    
+                        <li><a href="../modules/import.html">import</a></li>
+                    
+                        <li><a href="../modules/index.html">index</a></li>
+                    
+                        <li><a href="../modules/jobs.html">jobs</a></li>
+                    
+                        <li><a href="../modules/query.html">query</a></li>
+                    
+                        <li><a href="../modules/simple.html">simple</a></li>
+                    
+                        <li><a href="../modules/transaction.html">transaction</a></li>
+                    
+                        <li><a href="../modules/traversal.html">traversal</a></li>
+                    
+                        <li><a href="../modules/users.html">users</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>lib/api/query.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+var Arango = require(&#x27;../arango&#x27;),
+    utils = require(&#x27;../utils&#x27;);
+
+require(&#x27;./cursor&#x27;);
+/**
+ * The api module to create and execute queries running in ArangoDB.
+ * This module wraps the cursor module.
+ *
+ * @class query
+ * @module arango
+ * @submodule query
+ **/
+/**
+ *
+ * AQL function &quot;for&quot;,see &lt;a href=&quot;https://www.arangodb.org/manuals/current/Aql.html#AqlOperationFor&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method for
+ */
+/**
+ *
+ * AQL function &quot;in&quot;,see &lt;a href=&quot;https://www.arangodb.org/manuals/current/Aql.html#AqlOperationIn&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method in
+ */
+/**
+ *
+ * AQL function &quot;filter&quot;,see &lt;a href=&quot;https://www.arangodb.org/manuals/current/Aql.html#AqlOperationFilter&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method filter
+ */
+/**
+ *
+ * AQL function &quot;from&quot;,see &lt;a href=&quot;https://www.arangodb.org/manuals/current/Aql.html#AqlOperationFrom&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method from
+ */
+/**
+ *
+ * AQL function &quot;include&quot;,see &lt;a href=&quot;https://www.arangodb.org/manuals/current/Aql.html#AqlOperationInclude&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method include
+ */
+/**
+ *
+ * AQL function &quot;collect&quot;,see &lt;a href=&quot;https://www.arangodb.org/manuals/current/Aql.html#AqlOperationCollect&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method collect
+ */
+/**
+ *
+ * AQL function &quot;into&quot;,see &lt;a href=&quot;https://www.arangodb.org/manuals/current/Aql.html#AqlOperationInto&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method into
+ */
+/**
+ *
+ * AQL function &quot;sort&quot;,see &lt;a href=&quot;https://www.arangodb.org/manuals/current/Aql.html#AqlOperationSort&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method sort
+ */
+
+/**
+ *
+ * AQL function &quot;limit&quot;,see &lt;a href=&quot;https://www.arangodb.org/manuals/current/Aql.html#AqlOperationLimit&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method limit
+ */
+/**
+ *
+ * AQL function &quot;let&quot;,see &lt;a href=&quot;https://www.arangodb.org/manuals/current/Aql.html#AqlOperationLet&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method let
+ */
+/**
+ *
+ * AQL function &quot;return&quot;,see &lt;a href=&quot;https://www.arangodb.org/manuals/current/Aql.html#AqlOperationReturn&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_edges&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_edges&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_vertices&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_vertices&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_neighbors&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_neighbors&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_common_neighbors&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_common_neighbors&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_common_properties&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_common_properties&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_paths&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_paths&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_shortest_path&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_shortest_path&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_traversal&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_traversal&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_traversal_tree&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_traversal_tree&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_distance_to&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_distance_to&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_absolute_eccentricity&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_absolute_eccentricity&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_eccentricity&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_eccentricity&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_absolute_closeness&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_absolute_closeness&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_closeness&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_closeness&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_absolute_betweenness&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_absolute_betweenness&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_betweenness&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_betweenness&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_radius&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_radius&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+/**
+ *
+ * AQL function &quot;graph_diameter&quot;,see &lt;a href=&quot;https://docs.arangodb.org/Aql/GraphOperations.html#graph_diameter&quot;&gt;AQL Documentation&lt;/a&gt;
+ *
+ * @return{Aql}
+ * @method return
+ */
+function Aql() {
+
+    var keywords = [
+	&#x27;for&#x27;,
+	&#x27;in&#x27;,
+	&#x27;filter&#x27;,
+	&#x27;from&#x27;,
+	&#x27;include&#x27;,
+	&#x27;collect&#x27;,
+	&#x27;into&#x27;,
+	&#x27;sort&#x27;,
+	&#x27;limit&#x27;,
+	&#x27;let&#x27;,
+	&#x27;return&#x27;
+    ],
+	graphKeywords = [
+	    &quot;graph_vertices&quot;,
+	    &quot;graph_edges&quot;,
+	    &quot;graph_neighbors&quot;,
+	    &quot;graph_common_neighbors&quot;,
+	    &quot;graph_common_properties&quot;,
+	    &quot;graph_paths&quot;,
+	    &quot;graph_shortest_path&quot;,
+	    &quot;graph_traversal&quot;,
+	    &quot;graph_traversal_tree&quot;,
+	    &quot;graph_distance_to&quot;,
+	    &quot;graph_absolute_eccentricity&quot;,
+	    &quot;graph_eccentricity&quot;,
+	    &quot;graph_absolute_closeness&quot;,
+	    &quot;graph_closeness&quot;,
+	    &quot;graph_absolute_betweenness&quot;,
+	    &quot;graph_betweenness&quot;,
+	    &quot;graph_radius&quot;,
+	    &quot;graph_diameter&quot;
+	],
+	aql = this;
+
+    var bindGraphKeywords = function (bindee) {
+	graphKeywords.forEach(function(key) {
+	    bindee[key] = function() {
+		var aqlString = key.toUpperCase();
+		var args = Array.prototype.slice.call(arguments);
+		
+		aqlString += &quot;(&quot;;
+		aqlString += args.map(function(arg) {
+		    if (typeof arg === &quot;object&quot;) {
+			return JSON.stringify(arg);
+		    }
+		    
+		    return &quot;\&quot;&quot; + arg + &quot;\&quot;&quot;;
+		}).join(&quot;,&quot;);
+		aqlString += &quot;)&quot;;
+		
+		bindee(aqlString);
+		
+		return aql;
+	    };
+	});
+    };
+    
+    keywords.forEach(function (key) {
+	aql[key] = function () {
+	    if (!aql.struct) aql.struct = {};
+	    if (!arguments.length) return aql.struct[key];
+	    var args = [].slice.call(arguments);
+	    if (typeof args[0] === &#x27;function&#x27;) {
+		aql.struct[key] = (function (func) {
+		    var faql = new Aql();
+		    func.apply(faql);
+
+		    return faql.struct;
+		})(args[0]);
+	    } else if (args[0] instanceof Aql) {
+		aql.struct[key] = args[0].struct;
+	    } else {
+		if (key === &#x27;filter&#x27; || key === &#x27;let&#x27;) {
+		    if (!aql.struct[key]) aql.struct[key] = [];
+		    aql.struct[key].push(args.join(&#x27; &#x27;));
+		} else aql.struct[key] = args.join(&#x27; &#x27;);
+	    }
+	    
+	    return aql;
+	};
+    });
+
+    aql[&#x27;string&#x27;] = function () {
+	if (!aql.struct) aql.struct = {};
+	if (!arguments.length) return aql.struct[&#x27;string&#x27;];
+	var args = Array.prototype.slice.call(arguments);
+	aql.struct = { &#x27;string&#x27;: args[0] };
+	return aql;
+    };
+
+    bindGraphKeywords(aql.in);
+    bindGraphKeywords(aql.return);
+    
+    function structToString(s) {
+	var struct = s || aql.struct;
+	if (struct.hasOwnProperty(&#x27;string&#x27;)) {
+	    return struct[&#x27;string&#x27;];
+	}
+	return keywords.concat(graphKeywords)
+	    .filter(function (key) {
+		return !!struct[key];
+	    }).map(function (q) {
+		var keyword = q.toUpperCase(),
+		    value = struct[q],
+		    str;
+
+		switch (keyword) {
+		case &#x27;FROM&#x27;:
+		    keyword = &#x27;IN&#x27;;
+		    break;
+		case &#x27;INCLUDE&#x27;:
+		    keyword = &#x27;&#x27;;
+		    break;
+		case &#x27;FILTER&#x27;:
+		    value = value.join(&#x27; &amp;&amp; &#x27;);
+		    break;
+		case &#x27;LET&#x27;:
+		    value = value.join(&#x27; LET &#x27;);
+		    break;
+		default:
+		    break;
+		}
+
+		if (typeof value === &#x27;object&#x27;) {
+		    var nested = structToString(value);
+
+		    if (q === &#x27;in&#x27;) str = keyword + &#x27; ( &#x27; + nested + &#x27; )&#x27;;
+		    else str = keyword + &#x27; &#x27; + nested;
+
+		} else str = keyword + &#x27; &#x27; + value;
+
+		return str;
+	    }).join(&#x27; &#x27;);
+    }
+
+    aql.toString = structToString;
+}
+
+function QueryAPI(db) {
+    if (!(this instanceof QueryAPI))
+	return new QueryAPI(db);
+
+    var query = this;
+
+    this.options = {};
+    this.db = db;
+
+    Aql.call(this);
+
+    
+    /* transforms struct to string */
+    Object.defineProperty(this, &quot;query&quot;, {
+	stringValue: null,
+	get: function () {
+	    if (query.struct) {
+		this.stringValue = query.toString();
+		delete query.struct;
+	    }
+
+	    return this.stringValue;
+	},
+	set: function (val) {
+	    this.stringValue = val;
+	    delete query.struct;
+
+	    return this.stringValue;
+	}
+    });
+};
+
+utils.inherit(QueryAPI, Aql);
+
+function exec_query(query, method, args) {
+    var q = {}, i = 0,
+	a = Array.prototype.slice.call(args);
+
+    utils.extend(true, q, query.options);
+
+    /* use Aql object */
+    if (a[i] instanceof Aql)
+	q.query = a[i++].toString();
+    /* use query string */
+    else if (typeof a[i] === &#x27;string&#x27;)
+	q.query = a[i++];
+    else
+	q.query = query.query;
+
+    /* merge with object */
+    if (typeof a[i] === &#x27;object&#x27;) {
+	if (a[i].hasOwnProperty(&#x27;bindVars&#x27;))
+	    utils.extend(true, q, a[i++]);
+	else q.bindVars = a[i++];
+    }
+
+    return query.db.cursor[method](q, a[i]);
+}
+
+QueryAPI.prototype = {
+    /**
+     *
+     * Test the current query.
+     *
+     * @method test
+     * @return{Promise}
+     */
+    &quot;test&quot;: function () {
+	return exec_query(this, &quot;query&quot;, arguments);
+    },
+    /**
+     *
+     * Explain the current query.
+     *
+     * @return{Promise}
+     * @method explain
+     */
+    &quot;explain&quot;: function () {
+	return exec_query(this, &quot;explain&quot;, arguments);
+    },
+    /**
+     *
+     * Execute the current query.
+     *
+     * @method execute
+     * @return{Promise}
+     */
+    &quot;exec&quot;: function () {
+	var db = this.db, self = this;
+
+	function on_result(retval) {
+
+	    if (retval.hasMore) {
+		self.hasNext = function() {
+		    return true;
+		};
+		self.next = function () {
+		    return db.cursor.get(retval.id).then(on_result);
+		};
+	    } else {
+		delete self.next;
+		self.hasNext = function() {
+		    return false;
+		};
+	    }
+	    
+	    return retval.result;
+	};
+	
+	return exec_query(this, &quot;create&quot;, arguments).then(on_result);
+    },
+    /**
+     *
+     * Sets the count and batchsize options for the query for this instance.
+     * @param {Number} num - the desired batchsize.
+     * @method test
+     * @return {QueryAPI}
+     */
+    &quot;count&quot;: function (num) {
+	this.options.count = num &gt; 0 ? true : false;
+	this.options.batchSize = num &gt; 0 ? num : undefined;
+
+	return this;
+    },
+    /**
+     *
+     * Returns a fresh query instance.
+     * @method test
+     * @return {Aql}
+     */
+    &quot;new&quot;: function () {
+	return new Aql();
+    },
+    /**
+     *
+     * Returns true if there is more data to fetch,
+     *
+     * @return {Boolean}
+     * @method test
+     */
+    &quot;hasNext&quot;: function () {
+	return this.next !== QueryAPI.prototype.next;
+    },
+    &quot;next&quot;: function () {
+	throw {
+	    name: &quot;StopIteration&quot;
+	};
+    }
+};
+
+module.exports = Arango.api(&#x27;query&#x27;, QueryAPI);
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

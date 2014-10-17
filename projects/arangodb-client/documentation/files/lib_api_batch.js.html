@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lib/api/batch.js - arango</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="arango" src="http://kaerus.com/images/kaerus_logo.png" style="max-height: 65%;" title="arango">
+        
+            arango
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1.1.0</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/action", "classes/admin", "classes/aqlfunction", "classes/batch", "classes/collection", "classes/cursor", "classes/database", "classes/document", "classes/edge", "classes/endpoint", "classes/graph", "classes/import", "classes/index", "classes/jobs", "classes/query", "classes/simple", "classes/transaction", "classes/traversal", "classes/users", "modules/action", "modules/admin", "modules/aqlfunction", "modules/arango", "modules/batch", "modules/collection", "modules/cursor", "modules/database", "modules/document", "modules/edge", "modules/endpoint", "modules/graph", "modules/import", "modules/index", "modules/jobs", "modules/query", "modules/simple", "modules/transaction", "modules/traversal", "modules/users"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/action.html">action</a></li>
+                    
+                        <li><a href="../classes/admin.html">admin</a></li>
+                    
+                        <li><a href="../classes/aqlfunction.html">aqlfunction</a></li>
+                    
+                        <li><a href="../classes/batch.html">batch</a></li>
+                    
+                        <li><a href="../classes/collection.html">collection</a></li>
+                    
+                        <li><a href="../classes/cursor.html">cursor</a></li>
+                    
+                        <li><a href="../classes/database.html">database</a></li>
+                    
+                        <li><a href="../classes/document.html">document</a></li>
+                    
+                        <li><a href="../classes/edge.html">edge</a></li>
+                    
+                        <li><a href="../classes/endpoint.html">endpoint</a></li>
+                    
+                        <li><a href="../classes/graph.html">graph</a></li>
+                    
+                        <li><a href="../classes/import.html">import</a></li>
+                    
+                        <li><a href="../classes/index.html">index</a></li>
+                    
+                        <li><a href="../classes/jobs.html">jobs</a></li>
+                    
+                        <li><a href="../classes/query.html">query</a></li>
+                    
+                        <li><a href="../classes/simple.html">simple</a></li>
+                    
+                        <li><a href="../classes/transaction.html">transaction</a></li>
+                    
+                        <li><a href="../classes/traversal.html">traversal</a></li>
+                    
+                        <li><a href="../classes/users.html">users</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                        <li><a href="../modules/action.html">action</a></li>
+                    
+                        <li><a href="../modules/admin.html">admin</a></li>
+                    
+                        <li><a href="../modules/aqlfunction.html">aqlfunction</a></li>
+                    
+                        <li><a href="../modules/arango.html">arango</a></li>
+                    
+                        <li><a href="../modules/batch.html">batch</a></li>
+                    
+                        <li><a href="../modules/collection.html">collection</a></li>
+                    
+                        <li><a href="../modules/cursor.html">cursor</a></li>
+                    
+                        <li><a href="../modules/database.html">database</a></li>
+                    
+                        <li><a href="../modules/document.html">document</a></li>
+                    
+                        <li><a href="../modules/edge.html">edge</a></li>
+                    
+                        <li><a href="../modules/endpoint.html">endpoint</a></li>
+                    
+                        <li><a href="../modules/graph.html">graph</a></li>
+                    
+                        <li><a href="../modules/import.html">import</a></li>
+                    
+                        <li><a href="../modules/index.html">index</a></li>
+                    
+                        <li><a href="../modules/jobs.html">jobs</a></li>
+                    
+                        <li><a href="../modules/query.html">query</a></li>
+                    
+                        <li><a href="../modules/simple.html">simple</a></li>
+                    
+                        <li><a href="../modules/transaction.html">transaction</a></li>
+                    
+                        <li><a href="../modules/traversal.html">traversal</a></li>
+                    
+                        <li><a href="../modules/users.html">users</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>lib/api/batch.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+var Arango = require(&#x27;../arango&#x27;),
+    utils = require(&#x27;../utils&#x27;),
+    batchPart = &quot;Content-Type: application/x-arango-batchpart&quot;,
+    defaultBoundary = &quot;batch{id}&quot;,
+    batch_sequence = 0;
+
+/**
+ * The api module &quot;batch&quot; to perform batch requests. Calling &quot;start&quot; sets the connection into batch mode and collects
+ * every request. Calling &quot;Exec&quot; switches back to normal mode and executes the batch.
+ *
+ * @class batch
+ * @module arango
+ * @submodule batch
+ **/
+
+function BatchAPI(db) {
+    var path = &quot;/_api/batch&quot;,
+        request = db.request,
+        jobs = [],
+        boundary;
+
+    return {
+        /**
+         * Enables the batch mode for the current connection.
+         *
+         * @method start
+         * @return {Object} The modified arango connection.
+         */
+        &quot;start&quot;: function(user_boundary) {
+            ++batch_sequence;
+
+            boundary = user_boundary ? user_boundary + batch_sequence : defaultBoundary.replace(/{(.*)}/, batch_sequence);
+
+            /* start capturing requests */
+            db.request = function() {
+                var args = Array.prototype.slice.call(arguments),
+                    job = new db.Promise();
+
+                args.unshift(job);
+                jobs.push(args);
+
+                return job;
+            };
+
+            return db;
+        },
+        /**
+         * Disables the batch mode and executes the batch request.
+         *
+         * @param {Function} callback   - The callback function.
+         * @method exec
+         * @return{Promise}
+         */
+        &quot;exec&quot;: function() {
+            var options = {
+                headers: {
+                    &#x27;content-type&#x27;: &quot;multipart/form-data; boundary=&quot; + boundary
+                }
+            },
+                data = &#x27;&#x27;,
+                args, batch, i;
+	    
+            if (!jobs.length) throw new Error(&quot;No jobs&quot;);
+	    
+            for (i = 0; i &lt; jobs.length; i++) {
+                args = jobs[i];
+
+                data += &#x27;--&#x27; + boundary + &#x27;\r\n&#x27;;
+                data += batchPart + &#x27;\r\n\r\n&#x27;;
+                data += args[1] + &#x27; &#x27; + args[2] + &quot; HTTP/1.1\r\n\r\n&quot;;
+
+                if (args[3]) {
+                    if (typeof args[3] === &#x27;string&#x27;) data += args[3];
+                    else data += JSON.stringify(args[3]);
+		    data += &#x27;\r\n&#x27;;
+                }
+
+                if (args[4]) {
+                    utils.extend(true, options, args[4]);
+                }
+
+            }
+
+            data += &#x27;--&#x27; + boundary + &#x27;--\r\n&#x27;;
+
+            batch = jobs.map(function(j) {
+                return j[0];
+            });
+
+            jobs = [];
+
+            db.request = request;
+            // note: joins result of batch operation and individual jobs
+            return db.post(path, data, options).then(function(data, xhr) {
+                var results, job, result, ok;
+
+                results = decode_multipart(data, boundary);
+
+                for (job in batch) {
+                    result = results[job];
+
+                    ok = result &amp;&amp; result.xhr.status &lt; 400;
+
+                    batch[job][ok ? &#x27;fulfill&#x27; : &#x27;reject&#x27;](result.message, result.xhr);
+
+                }
+
+                return {
+                    jobs: batch.length,
+                    length: results.length
+                };
+            }, function(error) {
+
+                error = {
+                    message: &#x27;job failed&#x27;,
+                    error: error
+                };
+
+                for (var job in batch) {
+                    batch[job].reject(error);
+                }
+
+            }).join(batch);
+        },
+        /**
+         * Disables the batch mode and rejects all requests in the current batch.
+         *
+         * @param {String} [reason] - reason for cancellation.
+         * @method cancel
+         * @return {Object}    The original arango collection;
+         */
+        &quot;cancel&quot;: function(reason) {
+            var batch = jobs.map(function(j) {
+                return j[0]
+            }),
+                message = {
+                    message: reason || &quot;job cancelled&quot;
+                };
+	    
+            db.request = request;
+
+            for (var job in batch) {
+                batch[job].reject(message);
+            }
+
+            return db;
+        }
+    };
+}
+
+function decode_multipart(data, boundary) {
+    var x, i, j, results = [],
+        segments, lines, status, message;
+
+    // splits results into chunks
+    data = data.split(&#x27;--&#x27; + boundary).filter(function(f) {
+        return f;
+    }).map(function(m) {
+        return m.split(&#x27;\r\n&#x27;);
+    });
+
+    for (i in data) {
+        segments = [];
+
+        // check for valid batchPart in chunk
+        x = data[i].indexOf(batchPart);
+
+        if (x &lt; 0) continue;
+
+        lines = [];
+
+        // iterate through each chunk
+        for (j = x + 1; j &lt; data[i].length; j++) {
+            // collect lines to segments
+            if (!data[i][j]) {
+                if (lines.length) segments.push(lines);
+                lines = [];
+            } else {
+                lines.push(data[i][j]);
+            }
+        }
+
+        if (segments.length) {
+            // get http status code
+            status = parseInt(segments[0][0].split(&#x27; &#x27;)[1], 10);
+            // parse message
+            try {
+                message = JSON.parse(segments[1]);
+            } catch (e) {
+                message = segments[1];
+            }
+
+            results.push({
+                xhr: {
+                    status: status,
+                    headers: segments[0]
+                },
+                message: message
+            });
+        }
+    }
+
+    return results;
+}
+
+
+module.exports = Arango.api(&#x27;batch&#x27;, BatchAPI);
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

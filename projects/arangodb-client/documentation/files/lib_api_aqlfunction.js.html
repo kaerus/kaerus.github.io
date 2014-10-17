@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lib/api/aqlfunction.js - arango</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="arango" src="http://kaerus.com/images/kaerus_logo.png" style="max-height: 65%;" title="arango">
+        
+            arango
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1.1.0</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/action", "classes/admin", "classes/aqlfunction", "classes/batch", "classes/collection", "classes/cursor", "classes/database", "classes/document", "classes/edge", "classes/endpoint", "classes/graph", "classes/import", "classes/index", "classes/jobs", "classes/query", "classes/simple", "classes/transaction", "classes/traversal", "classes/users", "modules/action", "modules/admin", "modules/aqlfunction", "modules/arango", "modules/batch", "modules/collection", "modules/cursor", "modules/database", "modules/document", "modules/edge", "modules/endpoint", "modules/graph", "modules/import", "modules/index", "modules/jobs", "modules/query", "modules/simple", "modules/transaction", "modules/traversal", "modules/users"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/action.html">action</a></li>
+                    
+                        <li><a href="../classes/admin.html">admin</a></li>
+                    
+                        <li><a href="../classes/aqlfunction.html">aqlfunction</a></li>
+                    
+                        <li><a href="../classes/batch.html">batch</a></li>
+                    
+                        <li><a href="../classes/collection.html">collection</a></li>
+                    
+                        <li><a href="../classes/cursor.html">cursor</a></li>
+                    
+                        <li><a href="../classes/database.html">database</a></li>
+                    
+                        <li><a href="../classes/document.html">document</a></li>
+                    
+                        <li><a href="../classes/edge.html">edge</a></li>
+                    
+                        <li><a href="../classes/endpoint.html">endpoint</a></li>
+                    
+                        <li><a href="../classes/graph.html">graph</a></li>
+                    
+                        <li><a href="../classes/import.html">import</a></li>
+                    
+                        <li><a href="../classes/index.html">index</a></li>
+                    
+                        <li><a href="../classes/jobs.html">jobs</a></li>
+                    
+                        <li><a href="../classes/query.html">query</a></li>
+                    
+                        <li><a href="../classes/simple.html">simple</a></li>
+                    
+                        <li><a href="../classes/transaction.html">transaction</a></li>
+                    
+                        <li><a href="../classes/traversal.html">traversal</a></li>
+                    
+                        <li><a href="../classes/users.html">users</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                        <li><a href="../modules/action.html">action</a></li>
+                    
+                        <li><a href="../modules/admin.html">admin</a></li>
+                    
+                        <li><a href="../modules/aqlfunction.html">aqlfunction</a></li>
+                    
+                        <li><a href="../modules/arango.html">arango</a></li>
+                    
+                        <li><a href="../modules/batch.html">batch</a></li>
+                    
+                        <li><a href="../modules/collection.html">collection</a></li>
+                    
+                        <li><a href="../modules/cursor.html">cursor</a></li>
+                    
+                        <li><a href="../modules/database.html">database</a></li>
+                    
+                        <li><a href="../modules/document.html">document</a></li>
+                    
+                        <li><a href="../modules/edge.html">edge</a></li>
+                    
+                        <li><a href="../modules/endpoint.html">endpoint</a></li>
+                    
+                        <li><a href="../modules/graph.html">graph</a></li>
+                    
+                        <li><a href="../modules/import.html">import</a></li>
+                    
+                        <li><a href="../modules/index.html">index</a></li>
+                    
+                        <li><a href="../modules/jobs.html">jobs</a></li>
+                    
+                        <li><a href="../modules/query.html">query</a></li>
+                    
+                        <li><a href="../modules/simple.html">simple</a></li>
+                    
+                        <li><a href="../modules/transaction.html">transaction</a></li>
+                    
+                        <li><a href="../modules/traversal.html">traversal</a></li>
+                    
+                        <li><a href="../modules/users.html">users</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>lib/api/aqlfunction.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+var Arango = require(&#x27;../arango&#x27;);
+
+/**
+ * The api module &quot;aqlfunction&quot; to define user functions in ArangoDB.
+ *
+ * @class aqlfunction
+ * @module arango
+ * @submodule aqlfunction
+ **/
+function AqlfunctionAPI(db) {
+    var path = &quot;/_api/aqlfunction/&quot;;
+
+    return {
+	/**
+	 * Creates a user defined AQL function.
+	 *
+	 * @param {String} name - name of the function.
+	 * @param {String} code - the function.
+	 * @param {Boolean} isDeterministic   -   boolean value to indicate that the function results are fully
+	 * deterministic.
+	 * @method create
+	 * @return{Promise}
+	 */
+	&quot;create&quot;: function (name, code, isDeterministic) {
+	    var data = {
+		&quot;name&quot;: name,
+		&quot;code&quot;: code.toString()
+	    };
+	    
+	    if(isDeterministic === true)
+		data.isDeterministic = isDeterministic;
+	    
+	    return db.post(path, data);
+	},
+	/**
+	 * Deletes a user defined AQL function.
+	 *
+	 * @param {String} name - name of the function.
+	 * @param {Boolean} [group] - if set to true all functions in the namespace set in name will be deleted.
+	 * @method delete
+	 * @return{Promise}
+	 */
+	&quot;delete&quot;: function (name, group) {
+	    return db.delete(path + encodeURIComponent(name) + &quot;/?group=&quot; + group);
+	},
+	/**
+	 * Returns all user defined AQL functions.
+	 *
+	 * @param {String} [namespace] - If set only functions in this namespace will be returned.
+	 * @method get
+	 * @return{Promise}
+	 */
+	&quot;get&quot;: function (namespace) {
+	    var params = &quot;&quot;;
+	    
+	    if (typeof namespace === &#x27;string&#x27;) {
+		params += &#x27;?namespace=&#x27; + encodeURIComponent(namespace);
+	    }
+	    
+	    return db.get(path + params);
+	}
+    };
+}
+
+module.exports = Arango.api(&#x27;aqlfunction&#x27;, AqlfunctionAPI);
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

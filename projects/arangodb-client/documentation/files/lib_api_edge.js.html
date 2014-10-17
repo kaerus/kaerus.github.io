@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lib/api/edge.js - arango</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="arango" src="http://kaerus.com/images/kaerus_logo.png" style="max-height: 65%;" title="arango">
+        
+            arango
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1.1.0</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/action", "classes/admin", "classes/aqlfunction", "classes/batch", "classes/collection", "classes/cursor", "classes/database", "classes/document", "classes/edge", "classes/endpoint", "classes/graph", "classes/import", "classes/index", "classes/jobs", "classes/query", "classes/simple", "classes/transaction", "classes/traversal", "classes/users", "modules/action", "modules/admin", "modules/aqlfunction", "modules/arango", "modules/batch", "modules/collection", "modules/cursor", "modules/database", "modules/document", "modules/edge", "modules/endpoint", "modules/graph", "modules/import", "modules/index", "modules/jobs", "modules/query", "modules/simple", "modules/transaction", "modules/traversal", "modules/users"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/action.html">action</a></li>
+                    
+                        <li><a href="../classes/admin.html">admin</a></li>
+                    
+                        <li><a href="../classes/aqlfunction.html">aqlfunction</a></li>
+                    
+                        <li><a href="../classes/batch.html">batch</a></li>
+                    
+                        <li><a href="../classes/collection.html">collection</a></li>
+                    
+                        <li><a href="../classes/cursor.html">cursor</a></li>
+                    
+                        <li><a href="../classes/database.html">database</a></li>
+                    
+                        <li><a href="../classes/document.html">document</a></li>
+                    
+                        <li><a href="../classes/edge.html">edge</a></li>
+                    
+                        <li><a href="../classes/endpoint.html">endpoint</a></li>
+                    
+                        <li><a href="../classes/graph.html">graph</a></li>
+                    
+                        <li><a href="../classes/import.html">import</a></li>
+                    
+                        <li><a href="../classes/index.html">index</a></li>
+                    
+                        <li><a href="../classes/jobs.html">jobs</a></li>
+                    
+                        <li><a href="../classes/query.html">query</a></li>
+                    
+                        <li><a href="../classes/simple.html">simple</a></li>
+                    
+                        <li><a href="../classes/transaction.html">transaction</a></li>
+                    
+                        <li><a href="../classes/traversal.html">traversal</a></li>
+                    
+                        <li><a href="../classes/users.html">users</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                        <li><a href="../modules/action.html">action</a></li>
+                    
+                        <li><a href="../modules/admin.html">admin</a></li>
+                    
+                        <li><a href="../modules/aqlfunction.html">aqlfunction</a></li>
+                    
+                        <li><a href="../modules/arango.html">arango</a></li>
+                    
+                        <li><a href="../modules/batch.html">batch</a></li>
+                    
+                        <li><a href="../modules/collection.html">collection</a></li>
+                    
+                        <li><a href="../modules/cursor.html">cursor</a></li>
+                    
+                        <li><a href="../modules/database.html">database</a></li>
+                    
+                        <li><a href="../modules/document.html">document</a></li>
+                    
+                        <li><a href="../modules/edge.html">edge</a></li>
+                    
+                        <li><a href="../modules/endpoint.html">endpoint</a></li>
+                    
+                        <li><a href="../modules/graph.html">graph</a></li>
+                    
+                        <li><a href="../modules/import.html">import</a></li>
+                    
+                        <li><a href="../modules/index.html">index</a></li>
+                    
+                        <li><a href="../modules/jobs.html">jobs</a></li>
+                    
+                        <li><a href="../modules/query.html">query</a></li>
+                    
+                        <li><a href="../modules/simple.html">simple</a></li>
+                    
+                        <li><a href="../modules/transaction.html">transaction</a></li>
+                    
+                        <li><a href="../modules/traversal.html">traversal</a></li>
+                    
+                        <li><a href="../modules/users.html">users</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>lib/api/edge.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+var Arango = require(&#x27;../arango&#x27;),
+    url = require(&#x27;../url&#x27;),
+    utils = require(&#x27;../utils&#x27;);
+
+/**
+ * The api module to perform edge related operations on ArangoDB.
+ *
+ * @class edge
+ * @module arango
+ * @submodule edge
+ **/
+function EdgeAPI(db) {
+    var path = &quot;/_api/edge&quot;,
+	ypath = &quot;/_api/edges/&quot;;
+
+    return {
+	/**
+	 * creates an edge in a given collection.
+	 *
+	 * @param {String} collection - the collection
+	 * @param {String} from - The document handle of the start point must be passed in from handle.
+	 * @param {String} to - The document handle of the end point must be passed in from handle.
+	 * @param {Object} data - the data of the edge as JSON object
+	 * @param {Object} [options] - an object with the following optional parameters:
+	 * @param {Boolean} [options.createCollection=false] - if set the collection given in &quot;collection&quot; is created as
+	 * well.
+	 * @param {Boolean} [options.waitForSync=false] -  Wait until document has been synced to disk.
+	 * @method create
+	 * @return{Promise}
+	 */
+	&quot;create&quot;: function (collection, from, to, data, options) {
+	    if (typeof collection !== &#x27;string&#x27;) {
+		options = options;
+		options = data;
+		data = to;
+		to = from;
+		from = collection;
+		collection = db._collection;
+	    }
+
+	    options = options || {};
+
+	    options.collection = collection;
+	    options.from = from;
+	    options.to = to;
+	    
+	    return db.post(path + url.options(options), data);
+	},
+	/**
+	 * retrieves an edge from the database
+	 *
+	 * @param {String} id - the edge-handle
+	 * @param {Object} [options] - an object with the following optional parameters:
+	 * @param {Boolean} [options.match] - defining if the given revision should match the found document or not.
+	 * @param {Number} [options.rev] -  String the revision, used by the &quot;match&quot; attribute.
+	 * @method get
+	 * @return{Promise}
+	 */
+	&quot;get&quot;: function (id, options) {
+
+	    if (options) {
+		options = options ? options : {};
+		
+		utils.extend(true,options,url.ifMatch(id, options));
+	    }
+
+	    return db.get(path + &#x27;/&#x27; + id + url.options(options));
+	},
+	/**
+	 * replaces an edge with the data given in data.
+	 *
+	 * @param {String} id - the edge-handle
+	 * @param {Object} data - the data of the edge as JSON object
+	 * @param {Object} [options] - an object with the following optional parameters:
+	 * @param {Boolean} [options.match] - defining if the given revision should match the found document or not.
+	 * @param {Number} [options.rev] -  The revision, used by the &quot;match&quot; attribute.
+	 * @param {Boolean} [options.forceUpdate] - If set an update is performed even when the given revision
+	 * does not match.
+	 * @param {Boolean} [options.waitForSync=false] -  Wait until document has been synced to disk.
+	 * @method put
+	 * @return{Promise}
+	 */
+	&quot;put&quot;: function (id, data, options) {
+
+	    if (options) {
+		options = options ? options : {};
+		
+		utils.extend(true,options,url.ifMatch(id, options));
+	    }
+
+	    options = options || {};
+
+	    if (options.forceUpdate !== undefined) {
+		options.policy = (options.forceUpdate === true) ? &quot;last&quot; : &quot;error&quot;;
+		delete options.forceUpdate;
+	    }
+
+	    return db.put(path + &#x27;/&#x27; + id + url.options(options), data, options);
+	},
+	/**
+	 * patches an edge with the data given in data
+	 *
+	 * @param {String} id - the edge-handle
+	 * @param {Object} data - the data of the edge as JSON object
+	 * @param {Object} [options] - an object with the following optional parameters:
+	 * @param {Boolean} [options.match] - defining if the given revision should match the found document or not.
+	 * @param {Number} [options.rev] -  The revision, used by the &quot;match&quot; attribute.
+	 * @param {Boolean} [options.forceUpdate] - If set an update is performed even when the given revision
+	 * does not match.
+	 * @param {Boolean} [options.waitForSync=false] -  Wait until document has been synced to disk.
+	 * @param {Boolean} [options.keepNull=true] -  if set to false a patch request will delete every null value
+	 * attributes.
+	 * @method patch
+	 * @return{Promise}
+	 */
+	&quot;patch&quot;: function (id, data, options) {
+
+	    if (options) {
+		options = options ? options : {};
+		
+		utils.extend(true,options,url.ifMatch(id, options));
+	    }
+
+	    options = options ? options : {};
+
+	    if (options.forceUpdate !== undefined) {
+		options.policy = (options.forceUpdate === true) ? &quot;last&quot; : &quot;error&quot;;
+		delete options.forceUpdate;
+	    }
+
+	    return db.patch(path + &#x27;/&#x27; + id + url.options(options), data);
+	},
+	/**
+	 * Deletes an edge
+	 *
+	 * @param {String} id - the document-handle
+	 * @param {Object} [options] - an object with the following optional parameters:
+	 * @param {Boolean} [options.match] - boolean defining if the given revision should match the found document or
+	 * not.
+	 * @param {Number} [options.rev] -  String the revision, used by the &quot;match&quot; attribute.
+	 * @param {Boolean} [options.forceUpdate] - If set an update is performed even when the given revision
+	 * does not match.
+	 * @param {Boolean} [options.waitForSync=false] -  Wait until document has been synced to disk.
+	 * @method delete
+	 * @return{Promise}
+	 */
+	&quot;delete&quot;: function (id, options) {
+	    var headers;
+	    
+	    if (options) {
+		headers = url.ifMatch(id, options);
+	    }
+
+	    options = options || {};
+
+	    return db.delete(path + &#x27;/&#x27; + id + url.options(options), headers);
+	},
+	/**
+	 * same as get but only returns the header.
+	 *
+	 * @param {String} id - the edge-handle
+	 * @param {Object} [options] - an object with the following optional parameters:
+	 * @param {Boolean} [options.match] - defining if the given revision should match the found document or not.
+	 * @param {Number} [options.rev] -  String the revision, used by the &quot;match&quot; attribute.
+	 * @method head
+	 * @return{Promise}
+	 */
+	&quot;head&quot;: function (id, options) {
+	    var headers;
+
+	    if (options) {
+		headers = url.ifMatch(id, options);
+	    }
+	    
+	    options = options || {};
+
+	    return db.head(path + &#x27;/&#x27; + id + url.options(options), headers);
+	},
+	/**
+	 * Returns the list of edges starting or ending in the vertex identified by vertex-handle.
+	 *
+	 * @param {String} [collection] - The collection containing the documents.If not provided the collection defined
+	 * in the connection is used.
+	 * @param {String} vertex   -   The id of the start vertex.
+	 * @param {String} [direction=any] - Selects in or out direction for edges. If not set, any edges are returned.
+	 * @method list
+	 * @return{Promise}
+	 */
+	&quot;list&quot;: function (collection, vertex, direction) {
+	    var options;
+
+	    if(!vertex) {
+		vertex = collection;
+		direction = &#x27;any&#x27;;
+		collection = db._collection;
+	    } else if([&#x27;in&#x27;,&#x27;out&#x27;,&#x27;any&#x27;].indexOf(vertex) &gt;= 0){
+		direction = vertex;
+		vertex = collection;
+		collection = db._collection;
+	    }
+
+	    options = &#x27;?vertex=&#x27; + vertex + &#x27;&amp;direction=&#x27; + direction;
+
+	    return db.get(ypath + collection + options);
+	}
+    };
+}
+
+module.exports = Arango.api(&#x27;edge&#x27;, EdgeAPI);
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

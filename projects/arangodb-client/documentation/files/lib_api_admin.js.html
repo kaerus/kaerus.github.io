@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lib/api/admin.js - arango</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="arango" src="http://kaerus.com/images/kaerus_logo.png" style="max-height: 65%;" title="arango">
+        
+            arango
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1.1.0</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/action", "classes/admin", "classes/aqlfunction", "classes/batch", "classes/collection", "classes/cursor", "classes/database", "classes/document", "classes/edge", "classes/endpoint", "classes/graph", "classes/import", "classes/index", "classes/jobs", "classes/query", "classes/simple", "classes/transaction", "classes/traversal", "classes/users", "modules/action", "modules/admin", "modules/aqlfunction", "modules/arango", "modules/batch", "modules/collection", "modules/cursor", "modules/database", "modules/document", "modules/edge", "modules/endpoint", "modules/graph", "modules/import", "modules/index", "modules/jobs", "modules/query", "modules/simple", "modules/transaction", "modules/traversal", "modules/users"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/action.html">action</a></li>
+                    
+                        <li><a href="../classes/admin.html">admin</a></li>
+                    
+                        <li><a href="../classes/aqlfunction.html">aqlfunction</a></li>
+                    
+                        <li><a href="../classes/batch.html">batch</a></li>
+                    
+                        <li><a href="../classes/collection.html">collection</a></li>
+                    
+                        <li><a href="../classes/cursor.html">cursor</a></li>
+                    
+                        <li><a href="../classes/database.html">database</a></li>
+                    
+                        <li><a href="../classes/document.html">document</a></li>
+                    
+                        <li><a href="../classes/edge.html">edge</a></li>
+                    
+                        <li><a href="../classes/endpoint.html">endpoint</a></li>
+                    
+                        <li><a href="../classes/graph.html">graph</a></li>
+                    
+                        <li><a href="../classes/import.html">import</a></li>
+                    
+                        <li><a href="../classes/index.html">index</a></li>
+                    
+                        <li><a href="../classes/jobs.html">jobs</a></li>
+                    
+                        <li><a href="../classes/query.html">query</a></li>
+                    
+                        <li><a href="../classes/simple.html">simple</a></li>
+                    
+                        <li><a href="../classes/transaction.html">transaction</a></li>
+                    
+                        <li><a href="../classes/traversal.html">traversal</a></li>
+                    
+                        <li><a href="../classes/users.html">users</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                        <li><a href="../modules/action.html">action</a></li>
+                    
+                        <li><a href="../modules/admin.html">admin</a></li>
+                    
+                        <li><a href="../modules/aqlfunction.html">aqlfunction</a></li>
+                    
+                        <li><a href="../modules/arango.html">arango</a></li>
+                    
+                        <li><a href="../modules/batch.html">batch</a></li>
+                    
+                        <li><a href="../modules/collection.html">collection</a></li>
+                    
+                        <li><a href="../modules/cursor.html">cursor</a></li>
+                    
+                        <li><a href="../modules/database.html">database</a></li>
+                    
+                        <li><a href="../modules/document.html">document</a></li>
+                    
+                        <li><a href="../modules/edge.html">edge</a></li>
+                    
+                        <li><a href="../modules/endpoint.html">endpoint</a></li>
+                    
+                        <li><a href="../modules/graph.html">graph</a></li>
+                    
+                        <li><a href="../modules/import.html">import</a></li>
+                    
+                        <li><a href="../modules/index.html">index</a></li>
+                    
+                        <li><a href="../modules/jobs.html">jobs</a></li>
+                    
+                        <li><a href="../modules/query.html">query</a></li>
+                    
+                        <li><a href="../modules/simple.html">simple</a></li>
+                    
+                        <li><a href="../modules/transaction.html">transaction</a></li>
+                    
+                        <li><a href="../modules/traversal.html">traversal</a></li>
+                    
+                        <li><a href="../modules/users.html">users</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>lib/api/admin.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+var Arango = require(&#x27;../arango&#x27;),
+    url = require(&#x27;../url&#x27;);
+
+/**
+ * The api module to do administrative requests on Arango
+ *
+ * @module arango
+ * @class admin
+ * @submodule admin
+ **/
+function AdminAPI(db) {
+    var path = &quot;/_admin/&quot;;
+
+    return {
+	/**
+	 * Returns the server version
+	 *
+	 * @param {Boolean} details     - If true more details are returned.
+	 * @method version
+	 * @return {Promise}
+	 */
+	&quot;version&quot;: function (details) {
+	    return db.get(path + &quot;version?details=&quot; + !!details);
+	},
+	/**
+	 * Returns server statistics.
+	 *
+	 * @method statistics
+	 * @return {Promise}
+	 */
+	&quot;statistics&quot;: function () {
+	    return db.get(path + &quot;statistics&quot;);
+	},
+	/**
+	 * Returns servers role. Possible values are &quot;UNDEFINED&quot;, &quot;COORDINATOR&quot; or &quot;PRIMARY&quot;.
+	 *
+	 * @method role
+	 * @return {Promise}
+	 */
+	&quot;role&quot;: function () {
+	    return db.get(path + &quot;server/role&quot;);
+	},
+	/**
+	 * Returns descriptions for server statistics.
+	 *
+	 * @method statisticsDescription
+	 * @return {Promise}
+	 */
+	&quot;statisticsDescription&quot;: function () {
+	    return db.get(path + &quot;statistics-description&quot;);
+	},
+	/**
+	 * Returns the server logs.
+	 *
+	 * @param {Object} [options]        - Optional parameters and filters, can contain.
+	 * @param {String} [options.upto]       - Returns all log entries up to log level upto. Note that upto must be:
+	 * &lt;br&gt;\- fatal or 0 &lt;br&gt;- error or 1 &lt;br&gt;- warning or 2 &lt;br&gt;- info or 3 &lt;br&gt;- debug or 4 &lt;br&gt;The default value
+	 * is info.
+	 * @param {String} [options.level]      - Returns all log entries of log level level. Note that the URL
+	 * parameters upto and level are mutually exclusive.
+	 * @param {String} [options.start]      - Returns all log entries such that their log entry identifier (lid
+	 * value) is greater or equal to start.
+	 * @param {Number} [options.size]      - Restricts the result to at most size log entries.
+	 * @param {Number} [options.offset]    - Starts to return log entries skipping the first offset log entries.
+	 * offset and size can be used for pagination.
+	 * @param {String} [options.sort]       - Sort the log entries either ascending (if sort is asc) or descending
+	 * (if sort is desc) according to their lid values. Note that the lid imposes a chronological order. The default
+	 * value is asc
+	 * @method log
+	 * @return {Promise}
+	 */
+	&quot;log&quot;: function (options) {
+	    return db.get(path + &#x27;log&#x27; + url.options(options));
+	},
+	/**
+	 * Returns the routes defined in ArangoDB,
+	 *
+	 * @method routes
+	 * @return {Promise}
+	 */
+	&quot;routes&quot;: function () {
+	    return db.get(path + &quot;routing/routes&quot;);
+	},
+	/**
+	 * Reloads the routes in ArangoDB.
+	 *
+	 * @method routesReload
+	 * @return {Promise}
+	 */
+	&quot;routesReload&quot;: function () {
+	    return db.get(path + &quot;routing/reload&quot;);
+	},
+	/**
+	 * Flushes the server modules.
+	 *
+	 * @method modulesFlush
+	 * @return {Promise}
+	 */
+	&quot;modulesFlush&quot;: function () {
+	    return db.get(path + &quot;modules/flush&quot;);
+	},
+	/**
+	 * Returns the server time.
+	 *
+	 * @method time
+	 * @return {Promise}
+	 */
+	&quot;time&quot;: function () {
+	    return db.get(path + &quot;time&quot;);
+	},
+	/**
+	 * The call returns an object with the following attributes: &lt;br&gt;- headers: a list of HTTP headers received
+	 * \n&lt;br&gt;- requestType: the HTTP request method (e.g. GET)&lt;br&gt;- parameters: list of URL parameters received
+	 *
+	 * @method echo
+	 * @return {Promise}
+	 */
+	&quot;echo&quot;: function (method, htmloptions, data) {
+	    method = typeof method === &#x27;string&#x27; ? method.toUpperCase() : &#x27;GET&#x27;;
+	    
+	    htmloptions = htmloptions ? htmloptions : &#x27;&#x27;;
+
+	    return db.request(method, path + &#x27;echo&#x27; + htmloptions, data);
+	},
+
+	/**
+	 * Flushes the server wal.
+	 *
+	 * @param {Boolean} waitForSync        - Should wait if everything is synced to disk.
+	 * @param {Boolean} waitForCollector   - Should wait for the collector to execute.
+	 * @method modulesFlush
+	 * @return {Promise}
+	 */
+	&quot;walFlush&quot;: function (waitForSync, waitForCollector, options) {
+	    var pathSuffix = &quot;wal/flush&quot;;
+
+	    if (waitForSync) {
+		pathSuffix += &quot;?waitForSync=&quot; + waitForSync;
+	    }
+	    
+	    if (waitForCollector) {
+		pathSuffix += &quot;?waitForCollector=&quot; + waitForCollector;
+	    }
+	    
+	    return db.put(path + pathSuffix, undefined, options);
+	}
+    };
+}
+
+module.exports = Arango.api(&#x27;admin&#x27;, AdminAPI);
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>

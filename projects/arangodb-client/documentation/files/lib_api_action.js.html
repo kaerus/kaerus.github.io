@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lib/api/action.js - arango</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+</head>
+<body class="yui3-skin-sam">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <h1 class="brand" style="padding: 10px 16px 10px; height: 20px; line-height: 20px; margin-left: 0;">
+        
+	    <img alt="arango" src="http://kaerus.com/images/kaerus_logo.png" style="max-height: 65%;" title="arango">
+        
+            arango
+        </h1>
+	<div class="nav">
+            <li class="divider-vertical"></li>
+            <li>
+                <p class="navbar-text">
+                    API Docs for Version: <b>1.1.0</b>
+                </p>
+            </li>
+        </div>
+        <form class="navbar-form pull-right" style="line-height: 40px; height: 40px;">
+            <input style="margin-top: 0;" type="text" class="search-query" placeholder="Search for classes/modules..." data-obj='["classes/action", "classes/admin", "classes/aqlfunction", "classes/batch", "classes/collection", "classes/cursor", "classes/database", "classes/document", "classes/edge", "classes/endpoint", "classes/graph", "classes/import", "classes/index", "classes/jobs", "classes/query", "classes/simple", "classes/transaction", "classes/traversal", "classes/users", "modules/action", "modules/admin", "modules/aqlfunction", "modules/arango", "modules/batch", "modules/collection", "modules/cursor", "modules/database", "modules/document", "modules/edge", "modules/endpoint", "modules/graph", "modules/import", "modules/index", "modules/jobs", "modules/query", "modules/simple", "modules/transaction", "modules/traversal", "modules/users"]'>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="span3">
+	    <div>
+    <h3>APIs</h3>
+    <div id="sidebar">
+        <ul id="main-nav" class="nav nav-tabs" style="margin-bottom:0;">
+            <li class="active"><a href="#classes" data-toggle="tab">Classes</a></li>
+            <li><a href="#modules" data-toggle="tab">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" placeholder="Type to filter APIs">
+        </div>
+
+        <div class="tab-content" style="border: 1px solid #DDD; border-top:0;">
+            <div class="tab-pane active" id="classes">
+                <ul id="api-classes" class="nav nav-list">
+                    
+                        <li><a href="../classes/action.html">action</a></li>
+                    
+                        <li><a href="../classes/admin.html">admin</a></li>
+                    
+                        <li><a href="../classes/aqlfunction.html">aqlfunction</a></li>
+                    
+                        <li><a href="../classes/batch.html">batch</a></li>
+                    
+                        <li><a href="../classes/collection.html">collection</a></li>
+                    
+                        <li><a href="../classes/cursor.html">cursor</a></li>
+                    
+                        <li><a href="../classes/database.html">database</a></li>
+                    
+                        <li><a href="../classes/document.html">document</a></li>
+                    
+                        <li><a href="../classes/edge.html">edge</a></li>
+                    
+                        <li><a href="../classes/endpoint.html">endpoint</a></li>
+                    
+                        <li><a href="../classes/graph.html">graph</a></li>
+                    
+                        <li><a href="../classes/import.html">import</a></li>
+                    
+                        <li><a href="../classes/index.html">index</a></li>
+                    
+                        <li><a href="../classes/jobs.html">jobs</a></li>
+                    
+                        <li><a href="../classes/query.html">query</a></li>
+                    
+                        <li><a href="../classes/simple.html">simple</a></li>
+                    
+                        <li><a href="../classes/transaction.html">transaction</a></li>
+                    
+                        <li><a href="../classes/traversal.html">traversal</a></li>
+                    
+                        <li><a href="../classes/users.html">users</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="tab-pane" id="modules">
+                <ul id="api-modules" class="nav nav-list">
+                    
+                        <li><a href="../modules/action.html">action</a></li>
+                    
+                        <li><a href="../modules/admin.html">admin</a></li>
+                    
+                        <li><a href="../modules/aqlfunction.html">aqlfunction</a></li>
+                    
+                        <li><a href="../modules/arango.html">arango</a></li>
+                    
+                        <li><a href="../modules/batch.html">batch</a></li>
+                    
+                        <li><a href="../modules/collection.html">collection</a></li>
+                    
+                        <li><a href="../modules/cursor.html">cursor</a></li>
+                    
+                        <li><a href="../modules/database.html">database</a></li>
+                    
+                        <li><a href="../modules/document.html">document</a></li>
+                    
+                        <li><a href="../modules/edge.html">edge</a></li>
+                    
+                        <li><a href="../modules/endpoint.html">endpoint</a></li>
+                    
+                        <li><a href="../modules/graph.html">graph</a></li>
+                    
+                        <li><a href="../modules/import.html">import</a></li>
+                    
+                        <li><a href="../modules/index.html">index</a></li>
+                    
+                        <li><a href="../modules/jobs.html">jobs</a></li>
+                    
+                        <li><a href="../modules/query.html">query</a></li>
+                    
+                        <li><a href="../modules/simple.html">simple</a></li>
+                    
+                        <li><a href="../modules/transaction.html">transaction</a></li>
+                    
+                        <li><a href="../modules/traversal.html">traversal</a></li>
+                    
+                        <li><a href="../modules/users.html">users</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="span9">
+                <form id="options-form" class="form-inline pull-right">
+        Show:
+        <label for="api-show-inherited" class="checkbox">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected" class="checkbox">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private" class="checkbox">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated" class="checkbox">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </form>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <div class="page-header">
+    <h1>lib/api/action.js <small>File</small></h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+var Arango = require(&#x27;../arango&#x27;),
+    urlparser = require(&#x27;urlparser&#x27;),
+    utils = require(&#x27;../utils&#x27;);
+
+/* pull in dependencies */
+require(&#x27;./document&#x27;);
+require(&#x27;./admin&#x27;);
+
+
+/**
+ * The api module &quot;action&quot; to define user actions in ArangoDB.
+ *
+ * @class action
+ * @module arango
+ * @submodule action
+ **/
+function ActionAPI(db) {
+    var submit = {};
+
+    return {
+        /**
+         * Defines an action.
+         *
+         * @param {Object} o        - Object containing the action mandatory and optional settings.
+         * @param {String} o.name       - The name of the action.
+         * @param {String} o.url        - The url of the action.
+         * @param {String} o.method     - The method of the action.
+         * @param {String} [o.result]   - A function called if a result has been returned.
+         * @param {String} [o.error]    - A function called if an error occured.
+         * @param {String} [f]      - A function to be executed on the server.
+         * @param {String} [reload] - If true, the routes will be reloaded.
+
+         * @return {None}
+         * @method define
+         */
+        &quot;define&quot;: function(o, f, reload) {
+	    var ret = db.Promise(); // our return value
+
+            var inject = f &amp;&amp; typeof f === &#x27;function&#x27;;
+	    
+            if (typeof o !== &#x27;object&#x27;)
+                return ret.reject(Error(&quot;Action object unspecified&quot;));
+
+            if (!o.name)
+                return ret.reject(Error(&quot;Action name missing&quot;));
+
+            if (!o.url)
+                return ret.reject(Error(&quot;Action url missing&quot;));
+
+            if (o.data &amp;&amp; typeof o.data !== &#x27;object&#x27;)
+                return ret.reject(Error(&quot;Invalid action data type&quot;));
+
+            var method = o.method ? o.method.toLowerCase() : &#x27;get&#x27;;
+
+	    /* bind this action to a name */
+            submit[o.name] = action;
+	    
+            /* if a function was specified register a new action */
+            if (inject) {
+                var route = {
+                    action: {
+                        callback: f.toString()
+                    }
+                };
+
+                route.url = {
+                    match: o.match || &#x27;/&#x27; + urlparser.parse(o.url).path.base,
+                    methods: [method.toUpperCase()]
+                };
+
+                /* inject the function as action callback */
+                db.use(&quot;:_routing&quot;).document.create(route, {
+                    waitForSync: true
+                }).then(function(injected) {
+                    submit[o.name].route = injected._id;
+
+		    /* reload routes */
+                    if (reload === true) {
+			db.admin.routesReload().then(function(reloaded){
+			    ret.fulfill(reloaded);
+			}, ret.reject);
+		    } else ret.fulfill(injected);
+                }, ret.reject);
+            } else {
+		ret.fulfill(o.name);
+	    }
+
+            function action() {
+                var args = Array.prototype.slice.call(arguments);
+
+                /* Extend with o.data */
+                if (o.data) {
+                    if (args[0] &amp;&amp; typeof args[0] !== &#x27;function&#x27;) {
+                        if (Array.isArray(args[0])) {
+                            args[0].concat(o.data);
+                        } else if (typeof args[0] === &#x27;object&#x27;) {
+                            args[0] = utils.extend(true, o.data, args[0]);
+                        }
+                    } else {
+                        args.unshift(o.data);
+                    }
+                }
+
+                /* insert path */
+                args.unshift(o.url);
+
+                /* note: o.result, o.error are called whenever the promise has been fulfiled or rejected. */
+		if(o.result || o.error)
+                    return db[method].apply(db, args).then(o.result, o.error);
+
+		return db[method].apply(db, args);
+            }
+
+	    return ret;
+        },
+        /**
+         * Executes an action and returns a promise.
+         *
+         * @param {String} actionName   - Name of the action to be executed.
+         * @param {Object} [data]       - Data passed to the action.
+         * @param {Function} [callback] - Callback function.
+
+         * @return{Promise}
+         * @method submit
+         */
+        &quot;submit&quot;: function() {
+            var args = Array.prototype.slice.call(arguments),
+                name = args.shift();
+
+            return submit[name].apply(this, args);
+        },
+        /**
+         * deletes an action and its route if existing.
+         *
+         * @param {String} actionName   - Name of the action to be executed.
+         *
+         * @return{Promise}
+         * @method undefine
+         */
+        &quot;undefine&quot;: function(name) {
+	    var ret = db.Promise();
+	    
+            if (!submit[name])
+                ret.reject(Error(&quot;No such action: &quot; + name));
+
+            if (submit[name].route) {
+                db.document.delete(submit[name].route, {
+                    waitForSync: true
+                }).then(function(){
+		    delete submit[name];
+		    
+		    ret.fulfill(name);
+		},ret.reject);
+            } else {
+		delete submit[name];
+		
+		ret.fulfill(name);
+	    }
+	    
+	    return ret;
+        },
+        /**
+         * returns all actions currently available.
+         *
+         * @return {Object}
+         * @method getActions
+         */
+        &quot;getActions&quot;: function() {
+            var result = {};
+            Object.keys(submit).forEach(function(key) {
+                result[key] = submit[key];
+            })
+            return result;
+        }
+    }
+}
+
+
+module.exports = Arango.api(&#x27;action&#x27;, ActionAPI);
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/jquery/jquery-1.8.2.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script src="../assets/js/yuidoc-bootstrap.js"></script>
+<script>prettyPrint();</script>
+</body>
+</html>
